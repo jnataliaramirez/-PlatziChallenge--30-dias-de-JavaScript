@@ -1,30 +1,29 @@
+const getAverage = (values, length) => {
+  const sum = values.reduce((a, b) => a + b);
+  const avg = (sum / length).toFixed(2);
+
+  return parseFloat(avg);
+};
+
 const getStudentAverage = (students) => {
   const solutionAverage = {};
-  const arrayAverage = [];
+  const notesStudents = [];
+  const totalStudents = students.length;
 
   const studentsAverage = students.map((element) => {
-    const sum = element.grades.reduce((a, b) => a + b);
-    let avg = (sum / element.grades.length).toFixed(2);
-    let stringToNumber = parseFloat(avg);
+    const studentAverage = getAverage(element.grades, element.grades.length);
 
     return {
       name: element.name,
-      average: stringToNumber,
+      average: studentAverage,
     };
   });
 
-  const totalStudents = studentsAverage.length;
+  studentsAverage.map((element) => notesStudents.push(element.average));
 
-  studentsAverage.map((element) => arrayAverage.push(element.average));
+  const classAverageSolution = getAverage(notesStudents, totalStudents);
 
-  const sumAverageStudents = arrayAverage.reduce((a, b) => a + b);
-
-  const classAverage1 = (sumAverageStudents / totalStudents).toFixed(2);
-
-  const stringToNumber = parseFloat(classAverage1);
-
-  solutionAverage["classAverage"] = stringToNumber;
-
+  solutionAverage["classAverage"] = classAverageSolution;
   solutionAverage["students"] = studentsAverage;
 
   return solutionAverage;
