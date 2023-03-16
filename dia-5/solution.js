@@ -16,14 +16,6 @@ const findLargestPalindrome = (words) => {
   // Ordenar de la palabra más larga a la más pequeña
   palindromes.sort((a, b) => b.length - a.length);
 
-  // Si no llegan a existir coincidencias, retornará null
-  if (palindromes.length === 0) {
-    return null;
-  }
-
-  // Al retornar si el arreglo solo tiene 1 posición devolverla la palabra sino todo el arreglo
-  return palindromes.length === 1 ? palindromes[0] : palindromes;
+  // Al retornar si el arreglo solo tiene 1 posición devolverla la palabra sino null
+  return palindromes.length > 1 ? palindromes[0] : null;
 };
-
-const print = findLargestPalindrome(["ada", "faf", "world", "hello"]);
-console.log(print);

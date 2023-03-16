@@ -3,6 +3,7 @@
 En este repo encontrarás mis soluciones al reto de 30 días de JavaScript 🕵🏻
 
 ### El temario de los retos de JavaScript que encontrarás son:
+
 - Variables y tipos de datos
 - Funciones y métodos
 - Arrays y objetos
@@ -10,8 +11,8 @@ En este repo encontrarás mis soluciones al reto de 30 días de JavaScript 🕵�
 - Patrones de diseño y algoritmos
 - Estructuras de datos
 
+### ¿Qué busco con este reto?
 
-### ¿Qué busco con este reto? 
 - Repasar las bases de JavaScript 🤓
 - Ponerme a prueba 🏋🏻
 - Afianzar temas vistos 📋
@@ -20,10 +21,6 @@ En este repo encontrarás mis soluciones al reto de 30 días de JavaScript 🕵�
 
 ## Sin más, vamos a ello 💪🏻
 
--  Día 4A - Arrays: [Encuentra a los gatitos más famosos](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-4A)
+- Día 4A - Arrays: [Encuentra a los gatitos más famosos](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-4A)
 - Día 4B - Objetos: [Obten el promedio de los estudiantes](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-4B)
-
-
-
-
-
+- Día 5 - Checkpoint: [Encuentra el mayor palíndromo](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-5)
