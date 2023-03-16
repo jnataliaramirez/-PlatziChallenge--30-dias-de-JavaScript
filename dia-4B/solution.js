@@ -28,21 +28,3 @@ const getStudentAverage = (students) => {
 
   return solutionAverage;
 };
-
-const arrayStudents = [
-  {
-    name: "Pedro",
-    grades: [90, 87, 88, 90],
-  },
-  {
-    name: "Jose",
-    grades: [99, 71, 88, 96],
-  },
-  {
-    name: "Maria",
-    grades: [92, 81, 80, 96],
-  },
-];
-
-const print = getStudentAverage(arrayStudents);
-console.log(print);

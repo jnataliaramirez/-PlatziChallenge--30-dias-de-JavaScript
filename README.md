@@ -20,8 +20,8 @@ En este repo encontrarás mis soluciones al reto de 30 días de JavaScript 🕵�
 
 ## Sin más, vamos a ello 💪🏻
 
--  Día 4 - Arrays: [Encuentra a los gatitos más famosos](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-4)
-
+-  Día 4A - Arrays: [Encuentra a los gatitos más famosos](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-4A)
+- Día 4B - Objetos: [Obten el promedio de los estudiantes](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-4B)
 
 
 
