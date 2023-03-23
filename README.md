@@ -24,3 +24,5 @@ En este repo encontrarás mis soluciones al reto de 30 días de JavaScript 🕵�
 - Día 4A - Arrays: [Encuentra a los gatitos más famosos](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-4A)
 - Día 4B - Objetos: [Obten el promedio de los estudiantes](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-4B)
 - Día 5 - Checkpoint: [Encuentra el mayor palíndromo](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-5)
+- Día 8 - Closures: [Calculadora con closures](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-8)
+
