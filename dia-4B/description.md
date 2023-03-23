@@ -16,7 +16,7 @@ number.toFixed(2); // "100.32"
 <u> 👀 Ten en cuenta que este método regresa el número como un string y se espera que sea de tipo numérico. </u>
 
 Ejemplo:
-```
+```javascript
 Input: getStudentAverage([
   {
     name: "Pedro",
