@@ -11,7 +11,7 @@ Tu tarea es devolver un array con los nombres de los gatos que tienen solo el ma
 Tendrás inputs y outputs como los siguientes 👇
 
 Ejemplo 1:
-```
+```javascript
 Input: findFamousCats([
   {
     name: "Luna",
@@ -27,7 +27,7 @@ Output: ["Luna"]
 ```
 Ejemplo 2:
 
-```
+```javascript
 Input: findFamousCats([
   {
     name: "Mimi",
