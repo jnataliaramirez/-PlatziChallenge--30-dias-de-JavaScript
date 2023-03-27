@@ -1,21 +1,11 @@
 "use strict";
 
-function createCalculator() {
-  let total = 0;
+function myMap(array, func) {
+  let solution = [];
 
-  const add = (value) => (total += value);
-  const subtract = (value) => (total -= value);
-  const multiply = (value) => (total *= value);
-  const divide = (value) => (total /= value);
-  const clear = () => (total = 0);
-  const getTotal = () => total;
+  array.forEach((element) => {
+    solution.push(func(element));
+  });
 
-  return {
-    add,
-    subtract,
-    multiply,
-    divide,
-    clear,
-    getTotal,
-  };
+  return solution;
 }
