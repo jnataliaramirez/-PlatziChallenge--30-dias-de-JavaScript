@@ -26,4 +26,5 @@ En este repo encontrarás mis soluciones al reto de 30 días de JavaScript 🕵�
 - Día 5 - Checkpoint: [Encuentra el mayor palíndromo](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-5)
 - Día 8A - Closures: [Calculadora con closures](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-8A)
 - Día 8A - Higher Order Functions: [Crea tu propio método map](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-8B)
+- Día 10 - ECMAScript+: [Task planner](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-10)
 
