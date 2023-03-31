@@ -58,6 +58,32 @@ function createTaskPlanner() {
     }
   };
 
+  const getSortedTasksByPriority = () => {
+    return listTask.sort((a, b) => (a.priority > b.priority ? -1 : 1));
+  };
+
+  const filterTasksByTag = (tag) => {
+    let filter = [];
+    listTask.forEach((element) => {
+      element.tags.forEach((item) => {
+        if (item === tag) {
+          filter.push(element);
+        }
+      });
+    });
+    return filter;
+  };
+
+  const updateTask = (taskId, updates) => {
+    let indexTask = listTask.findIndex((task) => task.id === taskId);
+    return (listTask[indexTask] = {
+      id: taskId,
+      name: updates.name,
+      priority: updates.priority,
+      tags: updates.tags,
+      completed: updates.completed || false,
+    });
+  };
 
   return {
     addTask,
@@ -66,6 +92,9 @@ function createTaskPlanner() {
     getPendingTasks,
     getCompletedTasks,
     markTaskAsCompleted,
+    getSortedTasksByPriority,
+    filterTasksByTag,
+    updateTask,
   };
 }
 
@@ -74,28 +103,15 @@ const planner = createTaskPlanner();
 planner.addTask({
   id: 1,
   name: "Comprar leche1",
-  priority: 1,
-  tags: "shopping",
+  priority: 2,
+  tags: ["shopping", "home"],
 });
-planner.addTask({
-  id: 2,
-  name: "Comprar leche",
+
+planner.updateTask(1, {
+  id: 1,
+  name: "nati",
   priority: 1,
-  tags: "shopping",
-  completed: true,
+  tags: ["nati", "nata"],
 });
-planner.addTask({
-  id: 3,
-  name: "Comprar leche2",
-  priority: 1,
-  tags: "shopping",
-});
-planner.addTask({
-  id: 4,
-  name: "Comprar leche3",
-  priority: 1,
-  tags: "shopping",
-});
-planner.markTaskAsCompleted("Comprar leche3");
 
 console.log(planner.getTask());
