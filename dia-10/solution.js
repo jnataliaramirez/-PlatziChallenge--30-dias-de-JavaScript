@@ -1,94 +1,64 @@
 "use strict";
 
 function createTaskPlanner() {
-  // Tu código aquí 👈
   let listTask = [];
 
   const addTask = (task) => {
-    return listTask.push({
-      id: task.id,
-      name: task.name,
-      priority: task.priority,
-      tags: task.tags,
-      completed: task.completed || false,
-    });
+    task.completed = false;
+    listTask.push(task);
   };
 
   const removeTask = (value) => {
-    let indexTask;
-    if (typeof value === "string") {
-      indexTask = listTask.findIndex((task) => task.name === value);
-      listTask.splice(indexTask, 1);
-    } else {
-      indexTask = listTask.findIndex((task) => task.id === value);
+    let indexTask = listTask.findIndex(
+      (task) => task.id === value || task.name === value
+    );
+    if (indexTask !== -1) {
       listTask.splice(indexTask, 1);
     }
   };
 
-  const getTask = () => listTask;
+  const getTasks = () => {
+    return listTask;
+  };
 
   const getPendingTasks = () => {
-    let pendingTasks = [];
-    listTask.forEach((element) => {
-      if (element.completed) {
-        pendingTasks.push(element);
-      }
-    });
-    return pendingTasks;
+    return listTask.filter((task) => !task.completed);
   };
 
   const getCompletedTasks = () => {
-    let pendingTasks = [];
-    listTask.forEach((element) => {
-      if (!element.completed) {
-        pendingTasks.push(element);
-      }
-    });
-    return pendingTasks;
+    return listTask.filter((task) => task.completed);
   };
 
   const markTaskAsCompleted = (value) => {
-    let indexTask;
-    if (typeof value === "string") {
-      indexTask = listTask.findIndex((task) => task.name === value);
-      listTask[indexTask].completed = true;
-    } else {
-      indexTask = listTask.findIndex((task) => task.id === value);
-      listTask[indexTask].completed = true;
+    const task = listTask.find(
+      (task) => task.id === value || task.name === value
+    );
+    if (task) {
+      task.completed = true;
     }
   };
 
   const getSortedTasksByPriority = () => {
-    return listTask.sort((a, b) => (a.priority > b.priority ? -1 : 1));
+    const sortedTasks = [...listTask];
+    sortedTasks.sort((a, b) => a.priority - b.priority);
+    return sortedTasks;
   };
 
   const filterTasksByTag = (tag) => {
-    let filter = [];
-    listTask.forEach((element) => {
-      element.tags.forEach((item) => {
-        if (item === tag) {
-          filter.push(element);
-        }
-      });
-    });
-    return filter;
+    return listTask.filter((task) => task.tags.includes(tag));
   };
 
   const updateTask = (taskId, updates) => {
-    let indexTask = listTask.findIndex((task) => task.id === taskId);
-    return (listTask[indexTask] = {
-      id: taskId,
-      name: updates.name,
-      priority: updates.priority,
-      tags: updates.tags,
-      completed: updates.completed || false,
-    });
+    const task = listTask.find((task) => task.id === taskId);
+    if (task) {
+      Object.assign(task, updates);
+    }
   };
 
   return {
     addTask,
     removeTask,
-    getTask,
+    getTasks,
     getPendingTasks,
     getCompletedTasks,
     markTaskAsCompleted,
@@ -97,21 +67,3 @@ function createTaskPlanner() {
     updateTask,
   };
 }
-
-const planner = createTaskPlanner();
-
-planner.addTask({
-  id: 1,
-  name: "Comprar leche1",
-  priority: 2,
-  tags: ["shopping", "home"],
-});
-
-planner.updateTask(1, {
-  id: 1,
-  name: "nati",
-  priority: 1,
-  tags: ["nati", "nata"],
-});
-
-console.log(planner.getTask());
