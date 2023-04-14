@@ -1,4 +1,4 @@
-## Checkpoint - Encuentra el mayor palíndromo
+# Checkpoint - Encuentra el mayor palíndromo
 
 En este desafío, debes crear una función que encuentre el palíndromo más largo en una lista de palabras.
 
@@ -6,16 +6,26 @@ Recibirás un único parámetro: un array de palabras. Si no hay ningún palínd
 
 Un palíndromo es una palabra que se puede leer de la misma manera tanto hacia adelante como hacia atrás.
 
-Ejemplo 1:
-```javascript
-Input: findLargestPalindrome(["racecar", "level", "world", "hello"])
+### Ejemplo 1:
 
-Output: "racecar"
+```javascript
+Input: findLargestPalindrome(["racecar", "level", "world", "hello"]);
+
+Output: "racecar";
 ```
 
-Ejemplo 2: 
-```javascript
-Input: findLargestPalindrome(["Platzi", "javascript", "html", "css"])
+### Ejemplo 2:
 
-Output: null
+```javascript
+Input: findLargestPalindrome(["Platzi", "javascript", "html", "css"]);
+
+Output: null;
+```
+
+## Código base
+
+```javascript
+export function findLargestPalindrome(words) {
+  // Tu código aquí 👈
+}
 ```

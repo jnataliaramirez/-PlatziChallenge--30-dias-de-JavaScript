@@ -1,4 +1,4 @@
-## Closures - Calculadora con closures
+# Closures - Calculadora con closures
 
 En este desafío tendrás que crear una calculadora mediante el uso de closures.
 
@@ -11,7 +11,8 @@ La calculadora debe contar con los siguientes métodos:
 - clear: reinicia el total a 0 y devuelve el resultado
 - getTotal: devuelve el total actual.
 
-Ejemplo 1:
+### Ejemplo 1:
+
 ```javascript
 Input:
 const calculator = createCalculator()
@@ -20,21 +21,31 @@ calculator.add(10)
 Output: 10
 ```
 
-Ejemplo 2: 
-```javascript
-const calculator = createCalculator()
-calculator.add(10)
-calculator.subtract(-10)
+### Ejemplo 2:
 
-Output: 20
+```javascript
+const calculator = createCalculator();
+calculator.add(10);
+calculator.subtract(-10);
+
+Output: 20;
 ```
 
-Ejemplo 3:
-```javascript
-const calculator = createCalculator()
-calculator.add(10)
-calculator.subtract(-10)
-calculator.clear()
+### Ejemplo 3:
 
-Output: 0
+```javascript
+const calculator = createCalculator();
+calculator.add(10);
+calculator.subtract(-10);
+calculator.clear();
+
+Output: 0;
+```
+
+## Código base
+
+```javascript
+export function createCalculator() {
+  // Tu código aquí 👈
+}
 ```

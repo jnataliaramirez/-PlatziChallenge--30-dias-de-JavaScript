@@ -1,4 +1,4 @@
-## Obten el promedio de los estudiantes
+# Obten el promedio de los estudiantes
 
 En este desafío, deberás calcular el promedio general de una clase, así como el promedio individual de cada estudiante.
 
@@ -15,7 +15,8 @@ number.toFixed(2); // "100.32"
 
 <u> 👀 Ten en cuenta que este método regresa el número como un string y se espera que sea de tipo numérico. </u>
 
-Ejemplo:
+### Ejemplo:
+
 ```javascript
 Input: getStudentAverage([
   {
@@ -48,5 +49,13 @@ Output: {
       average: 87.25
     }
   ]
+}
+```
+
+## Código base
+
+```javascript
+export function findLargestPalindrome(words) {
+  // Tu código aquí 👈
 }
 ```

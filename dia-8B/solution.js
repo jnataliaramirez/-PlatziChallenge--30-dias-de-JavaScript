@@ -1,10 +1,10 @@
 "use strict";
 
-function myMap(array, func) {
+function myMap(array, callback) {
   let solution = [];
 
   array.forEach((element) => {
-    solution.push(func(element));
+    solution.push(callback(element));
   });
 
   return solution;

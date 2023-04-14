@@ -7,19 +7,19 @@ La función sendEmail recibe tres parámetros: email, subject y body, los cuales
 En caso de faltar algún dato, deberás lanzar un error con el mensaje indicando que faltan campos para enviar el correo. Recuerda utilizar la siguiente sintaxis:
 
 ```javascript
-  reject(new Error(message));
+reject(new Error(message));
 ```
 
 También recuerda que para usar setInterval o setTimeout debes usar el namespace de window de la siguiente manera para que las pruebas pasen correctamente.
 
 ```javascript
-  window.setTimeout(() => {
-    // Código aquí
-  }, 1000);
+window.setTimeout(() => {
+  // Código aquí
+}, 1000);
 ```
 
-
 Ejemplo 1:
+
 ```javascript
 Input:
 
@@ -42,22 +42,22 @@ Output:
 }
 ```
 
-Ejemplo 2: 
+Ejemplo 2:
+
 ```javascript
-Input:
-
-sendEmail(
-  "test@mail.com",
-  "",
-  "Únete a los 30 días de JS"
-)
-.then(result => console.log(result))
-.catch(error => console.log(error))
-
-Output:
+Input: sendEmail("test@mail.com", "", "Únete a los 30 días de JS")
+  .then((result) => console.log(result))
+  .catch((error) => console.log(error));
 
 // Después de 2 segundos
 
-"Error: Hacen falta campos para enviar el email"
+Output: "Error: Hacen falta campos para enviar el email";
+```
 
+## Código base
+
+```javascript
+export function sendEmail(email, subject, body) {
+  // Tu código aquí 👈
+}
 ```

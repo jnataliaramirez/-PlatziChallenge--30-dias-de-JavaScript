@@ -1,4 +1,4 @@
-## ECMAScript +6 - Crea un planificador de tareas
+# ECMAScript +6 - Crea un planificador de tareas
 
 En este desafío, debes implementar la lógica de un planificador de tareas que permita agregar, eliminar y marcar como completadas las tareas, así como también mostrar un registro de las mismas. Para ello, debes construir la lógica de la función closure llamada createTaskPlanner para que devuelva los siguientes métodos:
 
@@ -12,7 +12,8 @@ En este desafío, debes implementar la lógica de un planificador de tareas que 
 - filterTasksByTag(tag): Filtra las tareas por una etiqueta específica.
 - updateTask(taskId, updates): Buscar la tarea correspondiente con el id especificado y actualizar sus propiedades con las especificadas en el objeto updates.
 
-Ejemplo 1:
+### Ejemplo 1:
+
 ```javascript
 Input:
 const planner = createTaskPlanner();
@@ -44,7 +45,8 @@ planner.getCompletedTasks()
 }]
 ```
 
-Ejemplo 2: 
+### Ejemplo 2:
+
 ```javascript
 Input:
 const planner = createTaskPlanner();
@@ -72,4 +74,12 @@ planner.filterTasksByTag("shopping")
     priority: 3,
     tags: ["shopping", "home"]
 }]
+```
+
+## Código base
+
+```javascript
+export function createTaskPlanner() {
+  // Tu código aquí 👈
+}
 ```
