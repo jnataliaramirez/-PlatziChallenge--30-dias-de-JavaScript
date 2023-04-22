@@ -30,3 +30,4 @@ En este repo encontrarás mis soluciones al reto de 30 días de JavaScript 🕵�
 - Día 11A - Asincronismo: [Crea una promesa para mandar emails](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-11A)
 - Día 11B - Asincronismo: [Evita el callback hell haciendo uso de Promises](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-11B)
 - Día 11C - Asincronismo: [Evita el callback hell haciendo uso de async/await](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-11C)
+- Día 12 - Arrays a profundidad: [Válida un formulario de registro](https://github.com/jnataliaramirez/PlatziChallenge-30-dias-de-JavaScript/tree/main/dia-12)
